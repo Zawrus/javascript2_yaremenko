@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 78 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:yar_zad78.html</h3>
+<div>
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;zad78&lt;/title&gt;
+ &lt;script language="JavaScript"&gt;
+    var x=prompt("podaj 1 liczbe liczba1=","");
+var liczba1_yar=x;
+var y=prompt("podaj 2 liczbe liczba2=","");
+var liczba2_yar=y;
+
+
+if(liczba1_yar&lt;liczba2_yar)
+{
+    document.write("Liczby nieparzyste:"+"&lt;br&gt;"); 
+    for(var i=liczba1_yar;i&lt;=liczba2_yar;i++)
+{
+    if(i%2==1)
+{
+    document.write("&lt;p style=\"font-size:50px; color: green;\"&gt;&lt;br&gt;"+i+"&lt;br&gt;&lt;/p&gt;");
+}
+}
+
+}
+if(liczba1_yar&gt;liczba2_yar)
+{
+    document.write("Liczby nieparzyste:"+"&lt;br&gt;"); 
+    for(var i=liczba1_yar;i&gt;=liczba2_yar;i--)
+{
+    if(i%2==1)
+{
+    document.write("&lt;p style=\"font-size:25px;  color: blue;\"&gt;&lt;br&gt;"+i+"&lt;br&gt;&lt;/p&gt;");
+}
+}
+
+}
+// Z confirm program go czemus pokazuje przed if'em , nie wiem czemu
+
+// if(liczba1_yar=liczba2_yar)
+// {
+//    confirm('Brak obliczen');
+// }
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+<hr> 
+</pre>
+</div>
+</body>
+</html>

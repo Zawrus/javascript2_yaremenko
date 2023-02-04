@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Zad 73 kod</title>
+ </head>
+<body>
+    <hr>
+<h3>Plik:yar_zad73.html</h3>
+<div>
+<pre>
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;zad73&lt;/title&gt;
+ &lt;script language="JavaScript"&gt;
+var x=prompt("podaj Nazwisko=","");
+var b_yar=x.length;
+var y=prompt("podaj Imie=","");
+var a_yar=y.length;
+b_yar=b_yar%4+5;
+a_yar=a_yar%6+20;
+ for ( var i=1; i&lt;=b_yar; i++)
+ {
+ document.write("*");
+ }
+
+ document.write("&lt;br&gt;");
+    var wiersz_yar="*";
+    for ( var j=1; j&lt;=(b_yar-2); j++)
+ {
+    wiersz_yar=wiersz_yar+"&nbsp&nbsp";
+ }
+ wiersz_yar=wiersz_yar+"*";
+ for ( var j=1; j&lt;=(a_yar-2); j++)
+ {
+ document.write(wiersz_yar);
+ document.write("&lt;br&gt;");
+ }
+ for ( var i=1; i&lt;=b_yar; i++)
+ {
+ document.write("*");
+ }
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+
+
+
+<hr> 
+</pre>
+</div>
+</body>
+</html>

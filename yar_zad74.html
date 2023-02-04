@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>zad74</title>
+ <script language="JavaScript">
+var pocz_yar=50;
+var tekst_yar="Dowolny tekst";
+var x=prompt("podaj 1 liczbe o przedziałe <20,60> l1=","");
+var l1_t_yar=x;
+if(l1_t_yar<20 || l1_t_yar>60)
+ {
+    document.write("liczba l1 nie należy do przedziału <20,60>.");
+
+ }
+
+ else{
+var y=prompt("podaj 2 liczbe o przedziałe <20,60> l2=","");
+var l2_t_yar=y;
+ if(l2_t_yar<20 || l2_t_yar>60)
+ {
+    document.write("liczba l2 nie należy do przedziału <20,60>.");
+
+ }
+ else{
+   if(l1_t_yar>l2_t_yar)
+ {
+    for ( var i=pocz_yar; i>0; i--)
+ {
+   if(i%5==0)
+   {
+    document.write("<p style=\"font-size:"+pocz_yar+"px; color: black;\"><br>"+tekst_yar+"<br></p>");
+    pocz_yar=pocz_yar-5;
+   }
+
+ }
+ }
+   if(l1_t_yar<l2_t_yar)
+ {
+    for ( var i=pocz_yar; i<100; i++)
+ {
+   if(i%5==0)
+   {
+    document.write("<p style=\"font-size:"+pocz_yar+"px; color: black;\"><br>"+tekst_yar+"<br></p>");
+    pocz_yar=pocz_yar+5;
+   }
+ }
+ }
+
+
+
+
+
+
+
+ }
+
+
+
+ }
+
+
+
+
+
+
+
+ </script>
+</head>
+<body>
+</body>
+</html>

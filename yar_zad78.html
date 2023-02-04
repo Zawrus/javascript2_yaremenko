@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>zad78</title>
+ <script language="JavaScript">
+    var x=prompt("podaj 1 liczbe liczba1=","");
+var liczba1_yar=x;
+var y=prompt("podaj 2 liczbe liczba2=","");
+var liczba2_yar=y;
+
+
+
+if(liczba1_yar<liczba2_yar)
+{
+    document.write("Liczby nieparzyste:"+"<br>"); 
+    for(var i=liczba1_yar;i<=liczba2_yar;i++)
+{
+    if(i%2==1)
+{
+    document.write("<p style=\"font-size:50px; color: green;\"><br>"+i+"<br></p>");
+}
+}
+
+}
+if(liczba1_yar>liczba2_yar)
+{
+    document.write("Liczby nieparzyste:"+"<br>"); 
+    for(var i=liczba1_yar;i>=liczba2_yar;i--)
+{
+    if(i%2==1)
+{
+    document.write("<p style=\"font-size:25px;  color: blue;\"><br>"+i+"<br></p>");
+}
+}
+
+}
+// Z confirm program go czemus pokazuje przed if'em , nie wiem czemu
+
+// if(liczba1_yar=liczba2_yar)
+// {
+//    confirm('Brak obliczen');
+// }
+ </script>
+</head>
+<body>
+</body>
+</html>
